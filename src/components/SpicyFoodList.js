@@ -30,11 +30,11 @@ function handleFilterChange(event){
   /*The element clicked has an id and therefore if this id is passed to 
   handleLiClick we filter it out using the filter method.*/
   function handleLiClick(id){
-    const newFoodArray = foods.filter((food) => food.id !== id)
-    setFoods(newFoodArray)
-  }
+    //const newFoodArray = foods.filter((food) => food.id !== id)
+    //setFoods(newFoodArray)
+  
 //A sample function that would update elements in an array in state
-  function handleUpdateArray (){
+  //function handleUpdateArray (){
     const newFoodArray = foods.map(food=> {
       if(food.id === id){
         return {
@@ -61,7 +61,7 @@ function handleFilterChange(event){
       {food.name} | Heat: {food.heatLevel} | Cuisine: {food.cuisine}
     </li>
   ));
-  
+
   return (
     <div>
       <button onClick={handleAddFood}>Add New Food</button>
