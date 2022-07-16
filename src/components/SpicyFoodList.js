@@ -8,7 +8,7 @@ function SpicyFoodList() {
 filtering according to the user select value*/
   const foodsToDisplay = foods.filter((food)=>
   {
-    if (filterBy === "ALL")
+    if (filterBy === "All")
     {
       return true;
     }else {
